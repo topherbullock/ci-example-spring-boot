@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e -u
+
+pushd spring-boot-app
+  gradle test
+popd
