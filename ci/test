@@ -2,5 +2,5 @@
 set -e -u
 
 pushd spring-boot-app
-  gradle test
+  mvn test
 popd
