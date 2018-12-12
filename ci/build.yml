@@ -1,0 +1,18 @@
+---
+platform: linux
+
+image_resource:
+  type: registry-image
+  source: {repository: maven}
+
+inputs:
+- name: spring-boot-app
+
+outputs:
+- name: spring-boot-app-packaged
+
+caches:
+- path: build/
+
+run:
+  path: spring-boot-app/ci/build

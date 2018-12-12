@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e -x
+
+pushd spring-boot-app
+  mvn package
+popd
+
+cp -R spring-boot-app/* spring-boot-app-packaged/
